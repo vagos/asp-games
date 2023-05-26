@@ -1,0 +1,40 @@
+#program base.
+
+#const n=5.
+
+cellType(grass;wood;water;lava;sand).
+cell(1, 1, water).
+
+x(1..n).
+y(1..n).
+
+:- cell(X, Y, _), not x(X).
+:- cell(X, Y, _), not x(Y).
+
+1 { cell(X, Y, T): cellType(T) } 1 :- x(X), y(Y).
+
+0 { cell(X + 1, Y, grass) } 2 :- x(X), y(Y), cell(X, Y, grass).
+0 { cell(X - 1, Y, grass) } 2 :- x(X), y(Y), cell(X, Y, grass).
+0 { cell(X, Y + 1, grass) } 2 :- x(X), y(Y), cell(X, Y, grass).
+0 { cell(X, Y - 1, grass) } 2 :- x(X), y(Y), cell(X, Y, grass).
+
+adjacent(X, Y, X + 1, Y) :- x(X), y(Y).
+adjacent(X, Y, X - 1, Y) :- x(X), y(Y).
+adjacent(X, Y, X, Y + 1) :- x(X), y(Y).
+adjacent(X, Y, X, Y - 1) :- x(X), y(Y).
+
+connected(X, Y, X1, Y1) :- adjacent(X, Y, X1, Y1), cell(X, Y, T), cell(X1, Y1, T).
+connected(X, Y, X1, Y1) :- connected(X, Y, X2, Y2), connected(X1, Y1, X2, Y2).
+
+% connectedCount(N) :- N = #count { X, Y, XO, YO : cell(X, Y, water), connected(X, Y, XO, YO) }.
+% #maximize { N : connectedCount(N) }.
+
+:- cell(X1, Y1, lava), cell(X2, Y2, water), adjacent(X1, Y1, X2, Y2).
+#program lava(k).
+
+cellCount(N, T) :- cellType(T), N = #count { X, Y : cell(X, Y, T) }.
+:- cellCount(N, lava), N < k.
+:- cellCount(N, grass), N < 1.
+
+#program connected. 
+:- not connected(1, 1, n, n).
