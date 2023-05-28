@@ -1,6 +1,6 @@
 # Introduction
 
-Code examples related to my thesis: "Automated Reasoning and Answer Set Programming in the Game Development Process".
+Code examples related to the work in "Answer Set Programming in Game Development: Use Cases and Empirical Study"
 
 # Contents
 
