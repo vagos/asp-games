@@ -22,14 +22,6 @@ ctrl.ground([("base",[])])
 def plot_map(cells):
     grid = [[0 for _ in range(N)] for _ in range(N)]
 
-    tiles = {
-        'air' : "⬜",
-        'mushroom' : '🍄',
-        'banana': '🍌',
-        'wall' : '🧱',
-        'player': '😇',
-    }
-
     for c in cells:
         x,y,t = c.x,c.y,c.n
         grid[N - y][x-1] = t
