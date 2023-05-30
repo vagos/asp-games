@@ -5,4 +5,6 @@ Code examples related to the work in "Answer Set Programming in Game Development
 # Contents
 
 - `examples`: Examples from inside the thesis.
-- `participants`: Projects created using ASP by study participants.
+- `participants`: Some of the projects created using ASP by study participants.
+
+![Participant project examples](./assets/participant-projects.png)
