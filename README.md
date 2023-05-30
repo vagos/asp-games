@@ -1,6 +1,6 @@
 # Introduction
 
-Code examples related to the work in "Answer Set Programming in Game Development: Use Cases and Empirical Study"
+Code examples related to the work in "Investigating Applicability Heuristics of Answer Set Programming in Game Development: Use Cases and Empirical Study"
 
 # Contents
 
