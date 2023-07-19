@@ -23,7 +23,7 @@ game engine, translating the output atoms into actions inside the game world.
 directive that tries to minimize the ball’s distance to the enemy’s goal. The sequence of actions an agent will
 take will be the ones that bring the ball closer to the goal.
 
-<div style="display: block; margin-left: auto; margin-right: auto;" >
+<div align="center" >
 
 <img title="A top-down screenshot of the football playing field." src=/assets/field.png width=50%>
 <img title="The football players. The floating text above the agent indicates the agent's latest "thought", which is the action it will perform next." src=/assets/field_close_facts.png width=50%>
@@ -54,10 +54,10 @@ script that takes the output of the solver and translates the output atoms into 
 3. The generator’s output is controlled using integrity constraints. In our example, we added constraints where no
 “water” and “lava” tiles can touch while there must also be a river flowing along the diagonal.
 
-<div style="display: block; margin-left: auto; margin-right: auto;" >
+<div align="center" >
 
-<img title="A generated map with no constraints encoded." src="/assets/no_constraints.png">
-<img title="A generated map with a river flowing through it and no water and lava tiles touching (inside the same sub-grid)." src="/assets/all_constraints.png">
+<img title="A generated map with no constraints encoded." src="/assets/no_constraints.png" width=30%>
+<img title="A generated map with a river flowing through it and no water and lava tiles touching (inside the same sub-grid)." src="/assets/all_constraints.png" width=30%>
 
 </div>
 
