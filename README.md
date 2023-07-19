@@ -4,7 +4,7 @@ Code examples related to the work in "Investigating Applicability Heuristics of 
 
 # Contents
 
-- `examples`: Examples from inside the thesis.
+- `examples`: Proof of conecept applications of ASP in games.
 - `participants`: Some of the projects created using ASP by study participants.
 
 ![Participant project examples](./assets/participant-projects.png)
