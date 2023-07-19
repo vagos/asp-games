@@ -23,8 +23,8 @@ game engine, translating the output atoms into actions inside the game world.
 directive that tries to minimize the ball’s distance to the enemy’s goal. The sequence of actions an agent will
 take will be the ones that bring the ball closer to the goal.
 
-![A top-down screenshot of the football playing field.](./assets/field.png)
-![The football players. The floating text above the agent indicates the agent's latest "thought", which is the action it will perform next.](./assets/field_close_facts.png)
+![A top-down screenshot of the football playing field.](/assets/field.png)
+![The football players. The floating text above the agent indicates the agent's latest "thought", which is the action it will perform next.](/assets/field_close_facts.png)
 
 ## Tile-Level Terrain Generation
 
@@ -50,8 +50,8 @@ script that takes the output of the solver and translates the output atoms into 
 3. The generator’s output is controlled using integrity constraints. In our example, we added constraints where no
 “water” and “lava” tiles can touch while there must also be a river flowing along the diagonal.
 
-![A generated map with no constraints encoded.](./assets/no_constraints.png)
-![A generated map with a river flowing through it and no water and lava tiles touching (inside the same sub-grid).](./assets/all_constraints.png)
+![A generated map with no constraints encoded.](/assets/no_constraints.png)
+![A generated map with a river flowing through it and no water and lava tiles touching (inside the same sub-grid).](/assets/all_constraints.png)
 
 ## Extra
 
