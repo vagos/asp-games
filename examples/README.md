@@ -23,8 +23,8 @@ game engine, translating the output atoms into actions inside the game world.
 directive that tries to minimize the ball’s distance to the enemy’s goal. The sequence of actions an agent will
 take will be the ones that bring the ball closer to the goal.
 
-![A top-down screenshot of the football playing field.](/assets/field.png)
-![The football players. The floating text above the agent indicates the agent's latest "thought", which is the action it will perform next.](/assets/field_close_facts.png)
+<img alt="A top-down screenshot of the football playing field." src=/assets/field.png width=50%>
+<img alt="The football players. The floating text above the agent indicates the agent's latest "thought", which is the action it will perform next." src=/assets/field_close_facts.png width=50%>
 
 ## Tile-Level Terrain Generation
 
