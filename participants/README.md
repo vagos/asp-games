@@ -16,3 +16,7 @@ The applicability heuristics are:
 - **B**revity
 - Relatively **S**mall solution space
 - **E**mergent complexity
+
+Duration measures the total development time. A single iteration is defined as
+the process of inspecting the program's produced answer sets and making one or
+more significant modifications.
